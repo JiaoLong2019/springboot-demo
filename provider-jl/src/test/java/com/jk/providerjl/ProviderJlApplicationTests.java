@@ -1,10 +1,10 @@
-package com.jk;
+package com.jk.providerjl;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class ProviderJlApplicationTests {
 
     @Test
     void contextLoads() {
