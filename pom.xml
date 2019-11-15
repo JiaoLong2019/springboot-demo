@@ -8,11 +8,28 @@
         <version>2.2.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+
+
     <groupId>com.jk</groupId>
     <artifactId>springboot-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-demo</name>
     <description>Demo project for Spring Boot</description>
+
+    <modules>
+        <module>common</module>
+        <module>api</module>
+        <module>consumer</module>
+        <module>provider-cjl</module>
+        <module>provider-yyh</module>
+        <module>provider-wjh</module>
+        <module>provider-jl</module>
+        <module>provider-ysq</module>
+        <module>provider-wq</module>
+        <module>provider-lcw</module>
+        <module>log</module>
+    </modules>
 
     <properties>
         <java.version>1.8</java.version>
@@ -26,17 +43,41 @@
         </dependency>
 
 
-        <!--引入mongodb依赖jar包-->
+        <!-- mysql驱动包 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.23</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.1.1</version>
         </dependency>
         <!--dubbo-springBoot依赖-->
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.2.0</version>
+        </dependency>
         <dependency>
             <groupId>com.alibaba.spring.boot</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
             <version>2.0.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <!--引入mongodb依赖jar包-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
+
         <dependency>
             <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>
